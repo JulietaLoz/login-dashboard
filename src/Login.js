@@ -11,7 +11,7 @@ const Login = () => {
 
   // Function to handle form submission
   const handleLogin = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault(); 
     // Verify the credentials
     if (username === 'admin@gmail.com' && password === 'password') {
       // If the credentials are correct, navigate to the dashboard
