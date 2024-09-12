@@ -1,0 +1,108 @@
+/* Main dashboard container */
+.dashboard-container {
+  min-height: 100vh;
+  padding: 5px 10px;
+}
+
+/* Welcome message */
+.welcome-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 525;
+}
+
+/* Section title */
+.dashboard-container h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+}
+
+/* Metrics cards layout */
+.metrics-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card title */
+.card h3 {
+  color: #555;
+  font-weight: 525;
+}
+
+/* Metric value */
+.card p {
+  font-size: 2rem;
+  color: #1b5e20;;
+}
+
+/* Icon inside cards */
+.card-icon {
+  font-size: 3rem;
+  color: #1b5e20;;
+  margin-bottom: 10px;
+}
+
+/* Chart container */
+.chart-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 340px;
+  
+}
+
+/* Refresh button */
+.dashboard-container button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.dashboard-container button:hover {
+  background-color: #1b5e20;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .metrics-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
